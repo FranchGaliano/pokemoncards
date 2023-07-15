@@ -5,7 +5,7 @@ const Card = ({pokemon}) => {
     <div className="card">   
         <div id="card-cabecera">
             <h2 id="card-nro">{pokemon.id}</h2>
-            <img id="Logo" src="src/img/LogoGo.png" alt="Logo" />
+            
         </div> 
         <div className="imagen" >
             <img id="card-imagen-frente" src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name} />
