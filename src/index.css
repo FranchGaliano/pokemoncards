@@ -1,0 +1,43 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  border: 5px solid #0A285F;
+  padding: 20px;
+  border-radius: 25px;
+  height: 500px;
+  width: 350px;
+}
+
+.imagen{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 150px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #0075BE;
+  text-transform: capitalize;
+}
+
+p {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+#Logo {
+  display:flex;
+  justify-content: center;
+  height: 20%;
+}
