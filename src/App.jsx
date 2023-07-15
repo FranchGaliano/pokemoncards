@@ -10,7 +10,7 @@ function App() {
   const arreglo = [];
 
   useEffect(() => {
-    fetch('https://pokeapi.co/api/v2/pokemon/?limit=1')
+    fetch('https://pokeapi.co/api/v2/pokemon/?limit=649')
     .then((response) => response.json())
     .then((data) => setResultado(data.results.map((item) => {
               fetch(item.url)
@@ -20,15 +20,13 @@ function App() {
             }),  ));
     }, []
   );
-    console.log(resultado);
+
   setTimeout(() => {setLoad(false)}, 1000);
 
   return (
     <>      
       <div id="container">
-
-        { load ? ( <p>Loading...</p>
-        ) : (
+        { load ? ( <p id="Load">Cargando...</p> ) : (
           pokemon.map((poke,i) => <Card key={i} pokemon={poke} />) 
         )}
       </div>

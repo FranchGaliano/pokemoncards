@@ -1,17 +1,21 @@
-
 const Card = ({pokemon}) => {
+    console.log(pokemon)
+
   return (
-    <div className="card">    
-            <img id="Logo" src="src/img/Logo-Pokemon.webp" alt="Logo" />
-            <h1>{pokemon.id}</h1>
-            <div className="imagen" >
-                <img id="Frente" src={pokemon.sprites.front_default} alt="de frente" />
-                <img id="Atras"src={pokemon.sprites.back_default} alt="Por Atrás" />
-            </div>    
-        <h2>{pokemon.name}</h2>
+    <div className="card">   
+        <div id="card-cabecera">
+            <h2 id="card-nro">{pokemon.id}</h2>
+            <img id="Logo" src="src/img/LogoGo.png" alt="Logo" />
+        </div> 
+        <div className="imagen" >
+            <img id="card-imagen-frente" src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name} />
+        </div>    
+        <h1>{pokemon.name}</h1>
         <p>Experiencia base: {pokemon.base_experience}</p>
         <p>Altura: {pokemon.height}</p>
         <p>Peso: {pokemon.weight}</p> 
+
+        <p id="autor">CSS: Francesco Galiano Abanto</p>
     </div>
   )
 }
